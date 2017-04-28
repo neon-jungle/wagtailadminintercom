@@ -1,0 +1,7 @@
+{% extends "wagtailadmin/admin_base.html" %}
+{% load wagtailadminintercom_tags %}
+
+{% block js %}
+    {{ block.super }}
+    {% intercom_scripts %}
+{% endblock %}
